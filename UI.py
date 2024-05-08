@@ -49,7 +49,7 @@ with open('tokenizer.json', 'r') as f:
 tokenizer = tokenizer_from_json(tokenizer_json)
 
 # Load model
-model = keras.models.load_model("VGG16_LSTM_model.h5")
+model = keras.models.load_model("VGG16_LSTM_model.keras")
 vocab_size = tokenizer.num_words
 max_length = 37
 
